@@ -1,7 +1,7 @@
 import { Paper, styled } from "@mui/material";
 import { maxHeight, minHeight } from "@mui/system";
 import * as React from "react";
-import { colorTheme } from "../assets/colorTheme";
+import { colorTheme } from "./common/color/colorTheme";
 import { HomeComponent } from "./HomeComponent";
 import { useSpring, animated, config } from "react-spring";
 
@@ -21,19 +21,6 @@ export const AppRootContainer = styled("div")({
   backgroundRepeat: "no-repeat",
 });
 
-export const PaperAppRootContainer = styled(Paper)({
-  display: "flex",
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
-  minHeight: "90vh",
-  width: "90vw",
-  maxWidth: 900,
-  marginLeft: 15,
-  marginRight: 15,
-  backgroundColor: colorTheme.offwhiteBackground,
-});
-
 export const AppRoot = () => {
   const animatedProps = useSpring({
     to: { opacity: 1 },
@@ -45,9 +32,24 @@ export const AppRoot = () => {
   return (
     <AppRootContainer>
       <animated.div style={animatedProps}>
-        <PaperAppRootContainer elevation={3}>
+        <Paper
+          elevation={3}
+          style={{
+            display: "flex",
+            flex: 1,
+            justifyContent: "center",
+            minHeight: "90vh",
+            width: "90vw",
+            maxWidth: 900,
+            marginLeft: 15,
+            marginRight: 15,
+            marginTop: 5, 
+            marginBottom: 5,
+            backgroundColor: colorTheme.offwhiteBackground,
+          }}
+        >
           <HomeComponent />
-        </PaperAppRootContainer>
+        </Paper>
       </animated.div>
     </AppRootContainer>
   );
