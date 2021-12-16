@@ -3,6 +3,7 @@ import { Databases } from "./Skills and Tech/Databases";
 import { FrameworksRuntimeEnv } from "./Skills and Tech/FrameworksRuntimeEnv";
 import { ProgrammingLangs } from "./Skills and Tech/ProgrammingLangs";
 import { SkillsLegend } from "./Skills and Tech/SkillsLegend";
+import { SocialPanel } from "./Socials/SocialPanel";
 
 export const PageContent = () => {
   return (
@@ -15,6 +16,10 @@ export const PageContent = () => {
       }}
     >
       <HomeHeader />
+
+      <div style={{ paddingTop: "3vh", paddingBottom: "3vh" }} />
+
+      <SocialPanel />
 
       <div style={{ paddingTop: "3vh", paddingBottom: "3vh" }} />
 
