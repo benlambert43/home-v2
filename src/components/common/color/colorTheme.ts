@@ -8,7 +8,7 @@ export const colorTheme = {
   lightGreen: "#E2F0CB",
   green: "#B5EAD7",
   purple: "#C7CEEA",
-  highest: "#a2adcb",
-  intermediate: "#c1c8dc",
-  working: "#e0e3ee",
+  highest: "#c7d3e5",
+  intermediate: "#c8cec4",
+  working: "#cdccdd",
 };

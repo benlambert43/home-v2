@@ -1,5 +1,7 @@
 import { HomeHeader } from "./Hi/HomeHeader";
+import { Cloud } from "./Skills and Tech/Cloud";
 import { Databases } from "./Skills and Tech/Databases";
+import { Deployments } from "./Skills and Tech/Deployments";
 import { FrameworksRuntimeEnv } from "./Skills and Tech/FrameworksRuntimeEnv";
 import { ProgrammingLangs } from "./Skills and Tech/ProgrammingLangs";
 import { SkillsLegend } from "./Skills and Tech/SkillsLegend";
@@ -36,6 +38,14 @@ export const PageContent = () => {
       <div style={{ paddingTop: "1vh", paddingBottom: "1vh" }} />
 
       <Databases />
+
+      <div style={{ paddingTop: "1vh", paddingBottom: "1vh" }} />
+
+      <Cloud />
+
+      <div style={{ paddingTop: "1vh", paddingBottom: "1vh" }} />
+
+      <Deployments />
 
       <div style={{ paddingTop: "1vh", paddingBottom: "1vh" }} />
     </div>
