@@ -33,7 +33,7 @@ export const AppRoot = () => {
     <AppRootContainer>
       <animated.div style={animatedProps}>
         <Paper
-          elevation={3}
+          elevation={8}
           style={{
             display: "flex",
             flex: 1,
@@ -41,10 +41,10 @@ export const AppRoot = () => {
             minHeight: "90vh",
             width: "90vw",
             maxWidth: 900,
-            marginLeft: 15,
-            marginRight: 15,
-            marginTop: 5, 
-            marginBottom: 5,
+            marginLeft: 20,
+            marginRight: 20,
+            marginTop: 80, 
+            marginBottom: 80,
             backgroundColor: colorTheme.offwhiteBackground,
           }}
         >
